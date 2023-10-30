@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <script src="javasrcipt.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<header class="header-main">
+    <div class="header-main-logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/5537/5537616.png" alt="software logo">
+        <h2 class="header-main-name"> Brandon Medina </h2>
+    </div>
+    
+    <nav class="header-main-nav">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+
+</header>
+<body>
+    <form class="form-fields" action="paintingresults.html" target=" _self" method="GET">
+        <div class="input-group">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" placeholder="First and Last Name" required><br>
+        </div>
+        <div class="input-group">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Your Email address" required><br>
+        </div>
+        <div class="input-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="8"></textarea>
+        </div>        
+        <button class="submit" type="submit">Submit</button>
+        <button class="reset" type="reset">Reset</button>
+        </form>
+</body>
+</html>
