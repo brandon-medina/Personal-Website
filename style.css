@@ -1,12 +1,7 @@
 * {
     box-sizing: border-box;
 }
-@media (max-width: 768px){
-    body{
-        margin: 0 auto !important;
-        padding: 0 !important;
-    }
-}
+
 body {
     background-color: #003984;
     box-shadow: 0 0 12px -2px black;
@@ -270,6 +265,4 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
 .contact-title{
     padding-bottom: 1rem;
 }
-@media (max-width: 960px) {
 
-}
