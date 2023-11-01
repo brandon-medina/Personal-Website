@@ -128,7 +128,7 @@ section {
 
 .about h2 {
     display: block;
-    font-size: 2em;
+    font-size: 1em;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
@@ -153,36 +153,25 @@ section {
 }
 
 .about-section {
-    border-top: 10px solid #003984;
-    font-size: 16px;
+    font-size: 13px;
     min-height: 0vh;
-    margin: 0px 0px;
     padding: 55px 24px 25px;
-    box-shadow:none;
-}
-
-.about-section-2 {
-    border-top: 10px solid #003984;
-    font-size: 16px;
-    min-height: 0vh;
-    margin: 0px 0px;
-    padding: 25px 24px;
     box-shadow:none;
 }
 
 .hiking-pic {
     height: 200px;
-    float: right;
-    margin: 0 24px 24px 24px;
+    /*float: right;
+    margin: 0 24px 24px 24px;*/
 }
 
 .army-pic {
     height: 200px;
-    float: right;
+    /*float: right;
     margin: 0 24px 24px 24px;
     position: relative;
     bottom: 50px;
-    z-index: 1;
+    z-index: 1;*/
     
 }
 
@@ -192,13 +181,20 @@ section {
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    text-wrap: wrap;
 }
 
 .art-pic {
     height: 164px;
-    float: left;
-    margin: 24px 24px 24px 0px;
+    /*margin: 24px 24px 24px 0px;*/
 }
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
 
 .hero-2{
     width: 100%;
