@@ -1,6 +1,20 @@
-body {
-    background-color: rgb(129, 213, 255);
+* {
+    box-sizing: border-box;
 }
+
+body {
+    background-color: #003984;
+    box-shadow: 0 0 12px -2px black;
+    /* height: 100vh; */
+    padding: 0;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
 .header-main {
     width: 100%;
     height:60px;
@@ -8,6 +22,8 @@ body {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 2;
+    box-shadow: 0 0 12px -2px black;
     background-color: #ffffff;
     padding: 10px;
     align-items: center;
@@ -31,11 +47,12 @@ height:60px;
 }
 
 .header-main-name {
-    width: fit-content;
-    height: 100%;
-    margin-left: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 60px;
+    width: fit-content !important;
+    height: 100% !important;
+    margin-left: 30px !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    line-height: 40px !important;
+    font-size: 25px !important;
 }
 
 .header-main-nav {
@@ -56,5 +73,193 @@ height:60px;
 .header-main-nav ul li a {
     padding: 0 20px 0 10px;
     font-family:Arial, Helvetica, sans-serif;
-    line-height: 30px;
+    line-height: 0px;
 }
+
+
+section {
+    min-height: 100vh;
+    padding: 85px 24px 96px;
+    box-shadow: 0 0 12px -2px black;
+    background-color:#81d5ff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+}
+
+.Profile{
+    width: 300px;
+    float: right;
+    margin: 10px 0 10px 10px;
+}
+
+.home-main-mission-header {
+    display: block;
+    font-size: 1.3em;
+    margin-block-start: 1em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.home-main-mission {
+    display: block;
+    margin-block-start: 3em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-family:'Times New Roman', Times, serif
+}
+
+.home-main-quote {
+    font-family: 'Great Vibes', cursive;
+    color: #000000;
+    font-size: 55px;
+    font-weight: 100;
+    /*text-shadow: 1px 1px 2px #ffffff;*/
+    text-align: center;
+    margin-top: 1em;
+    display: block;
+    margin-block-start: 4em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.about h2 {
+    display: block;
+    font-size: 1em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.about-section h4 {
+    width: 100%;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+
+}
+
+.about-header {
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.about-section {
+    font-size: 13px;
+    min-height: 0vh;
+    padding: 55px 24px 25px;
+    box-shadow:none;
+}
+
+.hiking-pic {
+    height: 200px;
+    /*float: right;
+    margin: 0 24px 24px 24px;*/
+}
+
+.army-pic {
+    height: 200px;
+    /*float: right;
+    margin: 0 24px 24px 24px;
+    position: relative;
+    bottom: 50px;
+    z-index: 1;*/
+    
+}
+
+.about-section p {
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-wrap: wrap;
+}
+
+.art-pic {
+    height: 164px;
+    /*margin: 24px 24px 24px 0px;*/
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.hero-2{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-color:#81d5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 90%;
+    max-width: 960px;
+    
+
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #003984;
+    color: #003984;
+    font-size: 15px;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #003984;
+    cursor: text;
+    transition: 0.2s;
+}
+button{
+    padding: 10px 0;
+    margin-bottom: 0.5rem;
+    color: #003984;
+    outline: none;
+    border: 1px solid #003984;
+    width: 100%;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #003984;
+    color: #fff;
+}
+input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .input-group{
+    flex-basis: 48%;
+}
+.contact-title{
+    padding-bottom: 1rem;
+}
+
