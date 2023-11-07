@@ -96,11 +96,11 @@
     text-align: center;
     background: #333;
     margin-top: 20px;
-    /*position: fixed;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    font-size: 10px;*/
+    font-size: 10px;
   }
 
   .footer a {
@@ -189,6 +189,10 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
     .leftcolumn, .rightcolumn {   
       width: 100%;
       padding: 0;
+    }
+    .card {
+      gap: 10em;
+  
     }
     .army-pic {
         object-fit: contain;
