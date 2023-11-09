@@ -43,11 +43,16 @@
     color: white;
   }
   
+  
+  
+  
+  
   /* Create two unequal columns that floats next to each other */
   /* Left column */
   .leftcolumn {   
     float: left;
     width: 75%;
+    margin-bottom: 2em;
   }
   
   /* Right column */
@@ -67,9 +72,10 @@
   
   /* Add a card effect for articles */
   .card {
-    background-color: white;
+    background-color: #333;
     padding: 20px;
     margin-top: 20px;
+    color:#5b9b0f;
 
   }
 
@@ -81,6 +87,7 @@
     align-items: center;
     max-width: 100%;
     margin: 0 0 0 0;
+    color:#5b9b0f;
   }
   
   /* Clear floats after the columns */
