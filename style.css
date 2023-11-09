@@ -4,8 +4,9 @@
   
   body {
     font-family: Arial;
-    padding: 10px;
-    background: #f1f1f1;
+    margin: 0;
+    padding: 0;
+    background: #999999;
   }
   
   /* Header/Blog Title */
@@ -45,18 +46,54 @@
   
   .home-main {
     width: 50%;
-    max-width: 1200px;
-    height: 50%;
+    max-width: 800px;
+    min-height: 100vh;
     margin: auto;
-    padding: 10px;
-    background-position: center;
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 85px 24px 36px;
+    background-color: #fff;
+    box-shadow: 0 0 12px -2px black;
+    color:#5b9b0f;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
   }
 
-  .
+  .profile-pic {
+    width: 300px;
+    height: 400px;
+    float: right;
+  }
+
+  .profile-pic img {
+    width: 300px;
+
+  }
+
+  .home-head {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+
+  .mission {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .quote {
+    font-family: 'Satisfy', cursive;
+    font-size: 32px;
+    font-weight: 100;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    margin-top: 6em;
+  }
   
   
   
@@ -234,6 +271,12 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
         top: -35px;
         font-size: 13px;
     }
+    .home-main {
+      padding: 20px 24px 46px;
+    }
+    .quote {
+      font-size: 25px;
+    }
   }
   
   /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
@@ -251,6 +294,9 @@ input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label
     input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label{
         top: -35px;
         font-size: 12px;
+    }
+    .quote {
+      font-size: 20px;
     }
 
   }
