@@ -95,7 +95,11 @@
     margin-top: 6em;
   }
   
-  
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+  }
   
   /* Create two unequal columns that floats next to each other */
   /* Left column */
